@@ -1,0 +1,9 @@
+Host my_Name
+    HostName my_ip
+    Port 22222
+    User my_user
+    IdentityFile ~/.ssh/my_private_key
+    IdentitiesOnly yes
+    Compression yes
+    controlmaster auto
+    controlpath /tmp/ssh-%r@%h:%p

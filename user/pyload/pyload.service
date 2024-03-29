@@ -1,0 +1,11 @@
+[Unit]
+Description=Downloadtool for One-Click-Hoster written in python.
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/%u/.local/bin/pyload
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

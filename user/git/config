@@ -1,0 +1,6 @@
+[user]
+name="Egor Dergunov"
+email="edergunov@proton.me"
+
+[init]
+defaultBranch="main"
