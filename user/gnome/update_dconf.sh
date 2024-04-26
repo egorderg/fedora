@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# dconf watch /
+
 dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
 dconf write /org/gnome/desktop/interface/enable-hot-corners "false"
 
@@ -21,6 +23,7 @@ dconf write /org/gnome/desktop/privacy/disable-microphone "true"
 dconf write /org/gnome/desktop/peripherals/keyboard/repeat "true"
 dconf write /org/gnome/desktop/peripherals/keyboard/repeat-interval "25"
 dconf write /org/gnome/desktop/peripherals/keyboard/delay "uint32 250"
+dconf write /org/gnome/desktop/peripherals/mouse/accel-profile "'flat'"
 
 dconf write /org/gnome/mutter/dynamic-workspaces "false"
 dconf write /org/gnome/desktop/wm/preferences/num-workspaces "5"

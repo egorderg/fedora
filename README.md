@@ -8,6 +8,12 @@ mkdir ~/Environment
 mkdir ~/Development
 ```
 
+## Important
+
+- Don't use the discovered networks in gnome files
+    - connect directly at the bottom to the server
+    - discovered networks are mounted with a wrong filesystem type
+
 ## System
 
 System wide configurations and programs. *Should be executed as root*

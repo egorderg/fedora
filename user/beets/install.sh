@@ -1,6 +1,8 @@
 #!/bin/sh
 
-pip install --user beets[fetchart,embedart]
-pip install --user requests
+python3.11 -m ensurepip
+pip3.11 install --user beets[fetchart,embedart]
+pip3.11 install --user requests
 
-ln -f -s ~/Environment/programs/beets/config.yaml ~/.config/beets/config.yaml
+mkdir -p ~/.config/beets
+ln -f -s ~/Environment/user/beets/config.yaml ~/.config/beets/config.yaml

@@ -1,7 +1,7 @@
 #!/bin/sh
 
-dconf write /org/gnome/desktop/wm/keybindings/switch-windows "['<Super>Tab']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-windows-backward "['<Shift><Super>Tab']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-windows "['<Alt>Tab']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-windows-backward "['<Alt><Super>Tab']"
 dconf write /org/gnome/desktop/wm/keybindings/switch-applications "@as []"
 dconf write /org/gnome/desktop/wm/keybindings/switch-applications-backward "@as []"
 dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-1 "['<Super>1']"
