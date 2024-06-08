@@ -59,7 +59,6 @@
 	"zenMode.fullScreen": true,
 	"zenMode.silentNotifications": true,
 	"git.confirmSync": false,
-	"Lua.window.statusBar": false,
 	"[csharp]": {
 		"editor.defaultFormatter": "ms-dotnettools.csharp"
 	},
@@ -98,7 +97,6 @@
 	"godotTools.lsp.headless": true,
 	"godotTools.editorPath.godot4": "godot",
 	"workbench.colorTheme": "Atom One Dark",
-	"explorer.confirmDragAndDrop": false,
 	"mssql.connections": [
 		{
 			"server": "localhost,8989",
@@ -114,18 +112,7 @@
 		},
 		{
 			"server": "localhost,9989",
-			"database": "accounting-cashbook",
-			"authenticationType": "SqlLogin",
-			"user": "sa",
-			"password": "",
-			"emptyPasswordInput": false,
-			"savePassword": true,
-			"encrypt": "Mandatory",
-			"trustServerCertificate": true
-		},
-		{
-			"server": "localhost,9989",
-			"database": "organization",
+			"database": "cashbook",
 			"authenticationType": "SqlLogin",
 			"user": "sa",
 			"password": "",
@@ -133,12 +120,16 @@
 			"savePassword": true,
 			"profileName": "accounting-cashbook",
 			"encrypt": "Mandatory",
-			"trustServerCertificate": true
+			"trustServerCertificate": true,
+			"connectTimeout": 15,
+			"commandTimeout": 30,
+			"applicationName": "vscode-mssql"
 		}
 	],
 	"git.enableSmartCommit": true,
 	"[jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
+	"explorer.confirmPasteNative": false,
 	"workbench.activityBar.location": "hidden"
 }

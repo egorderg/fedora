@@ -143,4 +143,8 @@
 		"key": "alt+q",
 		"command": "workbench.action.tasks.reRunTask"
 	},
+	{
+		"key": "ctrl+shift+q",
+		"command": "workbench.action.tasks.restartTask"
+	},
 ]
