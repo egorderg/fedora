@@ -91,7 +91,6 @@
 		"**/*.css",
 		"**/*.scss"
 	],
-	"csharp.referencesCodeLens.enabled": false,
 	"omnisharp.enableRoslynAnalyzers": true,
 	"typescript.updateImportsOnFileMove.enabled": "never",
 	"godotTools.lsp.headless": true,
@@ -131,5 +130,7 @@
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"explorer.confirmPasteNative": false,
-	"workbench.activityBar.location": "hidden"
+	"workbench.activityBar.location": "hidden",
+	"dotnet.codeLens.enableReferencesCodeLens": false,
+	"javascript.updateImportsOnFileMove.enabled": "never"
 }
