@@ -1,0 +1,1 @@
+set ANDROID_SDK_ROOT ~/.android_sdk

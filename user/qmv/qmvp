@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eu
+
+find ./ -name "$1" -exec mv {} ./ \;
