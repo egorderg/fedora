@@ -48,6 +48,10 @@
 		"command": "-workbench.action.quit"
 	},
 	{
+		"key": "ctrl+shift+t",
+		"command": "-workbench.action.reopenClosedEditor"
+	},
+	{
 		"key": "ctrl+shift+w",
 		"command": "-workbench.action.closeWindow"
 	},
@@ -109,6 +113,10 @@
 		"command": "workbench.action.toggleActivityBarVisibility"
 	},
 	{
+		"key": "ctrl+shift+t",
+		"command": "workbench.view.extension.test"
+	},
+	{
 		"key": "alt+b",
 		"command": "workbench.action.togglePanel"
 	},
@@ -136,15 +144,15 @@
 		"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+q",
+		"key": "ctrl ctrl",
 		"command": "workbench.action.tasks.runTask"
 	},
 	{
-		"key": "alt+q",
+		"key": "ctrl+t",
 		"command": "workbench.action.tasks.reRunTask"
 	},
 	{
-		"key": "ctrl+shift+q",
+		"key": "alt+t",
 		"command": "workbench.action.tasks.restartTask"
 	},
 ]

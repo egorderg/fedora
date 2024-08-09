@@ -10,16 +10,19 @@
 	"terminal.integrated.hideOnStartup": "always",
 	"terminal.integrated.defaultProfile.linux": "fish",
 	"explorer.autoReveal": false,
+	"explorer.confirmPasteNative": false,
 	"security.workspace.trust.enabled": false,
 	"security.workspace.trust.banner": "never",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.startupEditor": "none",
+	"workbench.tips.enabled": true,
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.reduceMotion": "on",
 	"workbench.list.openMode": "doubleClick",
 	"workbench.view.alwaysShowHeaderActions": false,
 	"workbench.editor.showTabs": "multiple",
 	"workbench.editor.enablePreview": false,
+	"workbench.layoutControl.enabled": false,
 	"problems.defaultViewMode": "tree",
 	"vsicons.presets.foldersAllDefaultIcon": true,
 	"vsicons.dontShowNewVersionMessage": true,
@@ -59,12 +62,13 @@
 	"zenMode.fullScreen": true,
 	"zenMode.silentNotifications": true,
 	"git.confirmSync": false,
-	"[csharp]": {
-		"editor.defaultFormatter": "ms-dotnettools.csharp"
-	},
-	"[rust]": {
-		"editor.defaultFormatter": "rust-lang.rust-analyzer"
-	},
+	"git.enableSmartCommit": true,
+	"javascript.updateImportsOnFileMove.enabled": "never",
+	"typescript.updateImportsOnFileMove.enabled": "never",
+	"typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+	"typescript.inlayHints.variableTypes.enabled": true,
+	"typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -77,25 +81,15 @@
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[rust]": {
+		"editor.defaultFormatter": "rust-lang.rust-analyzer"
+	},
 	"[lua]": {
 		"editor.defaultFormatter": "sumneko.lua"
 	},
-	"todohighlight.include": [
-		"**/*.cs",
-		"**/*.js",
-		"**/*.jsx",
-		"**/*.ts",
-		"**/*.tsx",
-		"**/*.html",
-		"**/*.php",
-		"**/*.css",
-		"**/*.scss"
-	],
-	"omnisharp.enableRoslynAnalyzers": true,
-	"typescript.updateImportsOnFileMove.enabled": "never",
-	"godotTools.lsp.headless": true,
-	"godotTools.editorPath.godot4": "godot",
-	"workbench.colorTheme": "Atom One Dark",
 	"mssql.connections": [
 		{
 			"server": "localhost,8989",
@@ -125,12 +119,6 @@
 			"applicationName": "vscode-mssql"
 		}
 	],
-	"git.enableSmartCommit": true,
-	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"explorer.confirmPasteNative": false,
-	"workbench.activityBar.location": "hidden",
-	"dotnet.codeLens.enableReferencesCodeLens": false,
-	"javascript.updateImportsOnFileMove.enabled": "never"
+	"workbench.colorTheme": "Atom One Dark",
+	"workbench.activityBar.location": "hidden"
 }
