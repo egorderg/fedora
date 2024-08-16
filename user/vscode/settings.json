@@ -16,7 +16,7 @@
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.startupEditor": "none",
 	"workbench.tips.enabled": true,
-	"workbench.iconTheme": "vscode-icons",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.reduceMotion": "on",
 	"workbench.list.openMode": "doubleClick",
 	"workbench.view.alwaysShowHeaderActions": false,
@@ -26,6 +26,7 @@
 	"problems.defaultViewMode": "tree",
 	"vsicons.presets.foldersAllDefaultIcon": true,
 	"vsicons.dontShowNewVersionMessage": true,
+	"material-icon-theme.folders.theme": "classic",
 	"editor.stickyScroll.enabled": false,
 	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.cursorSurroundingLines": 5,
@@ -120,5 +121,5 @@
 		}
 	],
 	"workbench.colorTheme": "Atom One Dark",
-	"workbench.activityBar.location": "hidden"
+	"workbench.activityBar.location": "hidden",
 }
