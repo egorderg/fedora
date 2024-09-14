@@ -11,6 +11,8 @@ dnf remove gnome-weather
 dnf remove gnome-clocks
 dnf remove gnome-maps
 dnf remove gnome-tour
+dnf remove gnome-snapshot
+dnf remove snapshot
 
 dnf group remove libreoffice
 dnf remove libreoffice-core
