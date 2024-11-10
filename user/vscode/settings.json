@@ -19,6 +19,7 @@
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.reduceMotion": "on",
 	"workbench.list.openMode": "doubleClick",
+	"workbench.tree.expandMode": "doubleClick",
 	"workbench.view.alwaysShowHeaderActions": false,
 	"workbench.editor.showTabs": "multiple",
 	"workbench.editor.enablePreview": false,

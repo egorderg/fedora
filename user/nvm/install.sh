@@ -1,8 +1,8 @@
 #!/bin/sh
 
 mkdir ~/.nvm
-wget -O ~/.nvm/nvm.sh https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/nvm.sh
-wget -O ~/.nvm/nvm-exec https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/nvm-exec
+wget -O ~/.nvm/nvm.sh https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/nvm.sh
+wget -O ~/.nvm/nvm-exec https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/nvm-exec
 chmod a+x ~/.nvm/nvm-exec
 
 ln -s -f ~/Environment/user/nvm/init_nvm.sh ~/.bashrc.d/init_nvm.sh
