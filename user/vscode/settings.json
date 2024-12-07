@@ -29,7 +29,7 @@
 	"vsicons.dontShowNewVersionMessage": true,
 	"material-icon-theme.folders.theme": "classic",
 	"editor.stickyScroll.enabled": false,
-	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorSmoothCaretAnimation": "off",
 	"editor.cursorSurroundingLines": 5,
 	"editor.fontFamily": "'FiraCode Nerd Font Ret', 'monospace', monospace",
 	"editor.fontSize": 13,
@@ -94,18 +94,6 @@
 	},
 	"mssql.connections": [
 		{
-			"server": "localhost,8989",
-			"database": "",
-			"authenticationType": "SqlLogin",
-			"user": "sa",
-			"password": "",
-			"emptyPasswordInput": false,
-			"savePassword": true,
-			"profileName": "cashbook",
-			"encrypt": "Mandatory",
-			"trustServerCertificate": true
-		},
-		{
 			"server": "localhost,9989",
 			"database": "cashbook",
 			"authenticationType": "SqlLogin",
@@ -119,8 +107,23 @@
 			"connectTimeout": 15,
 			"commandTimeout": 30,
 			"applicationName": "vscode-mssql"
+		},
+		{
+			"server": "localhost,8989",
+			"database": "",
+			"authenticationType": "SqlLogin",
+			"user": "sa",
+			"password": "",
+			"emptyPasswordInput": false,
+			"savePassword": true,
+			"profileName": "cashbook",
+			"encrypt": "Mandatory",
+			"trustServerCertificate": true,
+			"connectTimeout": 15,
+			"commandTimeout": 30,
+			"applicationName": "vscode-mssql"
 		}
 	],
-	"workbench.colorTheme": "Atom One Dark",
+	"workbench.colorTheme": "Darcula",
 	"workbench.activityBar.location": "hidden",
 }
