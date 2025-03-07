@@ -40,6 +40,11 @@
 		}
 	},
 	{
+		"key": "ctrl+shift+b",
+		"command": "-workbench.action.tasks.build",
+		"when": "taskCommandsRegistered"
+	},
+	{
 		"key": "ctrl+s",
 		"command": "-workbench.action.files.save"
 	},
@@ -154,5 +159,9 @@
 	{
 		"key": "alt+t",
 		"command": "workbench.action.tasks.restartTask"
+	},
+	{
+		"key": "ctrl+shift+b",
+		"command": "git.checkout"
 	},
 ]
