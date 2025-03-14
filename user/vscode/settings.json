@@ -47,7 +47,7 @@
 	"editor.showFoldingControls": "never",
 	"editor.occurrencesHighlight": "singleFile",
 	"editor.scrollbar.horizontal": "auto",
-	"editor.scrollbar.vertical": "hidden",
+	"editor.scrollbar.vertical": "auto",
 	"editor.overviewRulerBorder": false,
 	"editor.hideCursorInOverviewRuler": true,
 	"editor.bracketPairColorization.enabled": true,
@@ -71,9 +71,6 @@
 	"typescript.inlayHints.variableTypes.enabled": true,
 	"typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
 	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-	"sonarlint.disableTelemetry": true,
-	"sonarlint.pathToNodeExecutable": "",
-	"sonarlint.ls.javaHome": "",
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
