@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  flatnotes:
+    container_name: flatnotes
+    image: dullage/flatnotes:latest
+    restart: always
+    volumes:
+      - /home/egor/Documents/flatnotes:/data:z
+    ports:
+      - "3112:8080"
+    environment:
+      PUID: 1000
+      PGID: 1000
+      FLATNOTES_AUTH_TYPE: "none"
+      FLATNOTES_QUICK_ACCESS_HIDE: false
+      FLATNOTES_QUICK_ACCESS_TITLE: "RECENTLY MODIFIED"
+      FLATNOTES_QUICK_ACCESS_TERM: "#pinned"
+      FLATNOTES_QUICK_ACCESS_SORT: "lastModified"
+      FLATNOTES_QUICK_ACCESS_LIMIT: 10

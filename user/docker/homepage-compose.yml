@@ -1,0 +1,13 @@
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    restart: always
+    ports:
+      - 3111:3000
+    volumes:
+      - /home/egor/Documents/homepage:/app/config:z # Make sure your local config directory exists
+    environment:
+      HOMEPAGE_ALLOWED_HOSTS: "localhost:3111" # required, may need port. See gethomepage.dev/installation/#homepage_allowed_hosts
+      PUID: 1000 # id -u
+      PGID: 1000 # id -g

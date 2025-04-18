@@ -1,129 +1,185 @@
 {
-	"telemetry.telemetryLevel": "off",
-	"extensions.autoUpdate": true,
-	"keyboard.dispatch": "keyCode",
-	"window.menuBarVisibility": "toggle",
-	"window.titleBarStyle": "native",
-	"window.commandCenter": false,
-	"window.restoreWindows": "none",
-	"files.simpleDialog.enable": true,
-	"terminal.integrated.hideOnStartup": "always",
-	"terminal.integrated.defaultProfile.linux": "fish",
-	"explorer.autoReveal": false,
-	"explorer.confirmPasteNative": false,
-	"security.workspace.trust.enabled": false,
-	"security.workspace.trust.banner": "never",
-	"workbench.editor.empty.hint": "hidden",
-	"workbench.startupEditor": "none",
-	"workbench.tips.enabled": true,
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.reduceMotion": "on",
-	"workbench.list.openMode": "doubleClick",
-	"workbench.tree.expandMode": "doubleClick",
-	"workbench.view.alwaysShowHeaderActions": false,
-	"workbench.editor.showTabs": "multiple",
-	"workbench.editor.enablePreview": false,
-	"workbench.layoutControl.enabled": false,
-	"problems.defaultViewMode": "tree",
-	"vsicons.presets.foldersAllDefaultIcon": true,
-	"vsicons.dontShowNewVersionMessage": true,
-	"material-icon-theme.folders.theme": "classic",
-	"editor.stickyScroll.enabled": false,
-	"editor.cursorSmoothCaretAnimation": "off",
-	"editor.cursorSurroundingLines": 5,
-	"editor.fontFamily": "'FiraCode Nerd Font Ret', 'monospace', monospace",
-	"editor.fontSize": 13,
-	"editor.lineHeight": 17,
-	"editor.indentSize": 2,
-	"editor.tabSize": 2,
-	"editor.renderWhitespace": "none",
-	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
-	"editor.wordWrap": "off",
-	"editor.renderLineHighlight": "all",
-	"editor.renderLineHighlightOnlyWhenFocus": true,
-	"editor.foldingHighlight": true,
-	"editor.unfoldOnClickAfterEndOfLine": false,
-	"editor.showFoldingControls": "never",
-	"editor.occurrencesHighlight": "singleFile",
-	"editor.scrollbar.horizontal": "auto",
-	"editor.scrollbar.vertical": "auto",
-	"editor.overviewRulerBorder": false,
-	"editor.hideCursorInOverviewRuler": true,
-	"editor.bracketPairColorization.enabled": true,
-	"editor.guides.bracketPairs": false,
-	"editor.guides.bracketPairsHorizontal": false,
-	"editor.formatOnSave": true,
-	"editor.minimap.enabled": false,
-	"editor.semanticHighlighting.enabled": true,
-	"editor.quickSuggestionsDelay": 100,
-	"editor.multiCursorModifier": "alt",
-	"zenMode.hideLineNumbers": false,
-	"zenMode.centerLayout": false,
-	"zenMode.hideStatusBar": false,
-	"zenMode.fullScreen": true,
-	"zenMode.silentNotifications": true,
-	"git.confirmSync": false,
-	"git.enableSmartCommit": true,
-	"javascript.updateImportsOnFileMove.enabled": "never",
-	"typescript.updateImportsOnFileMove.enabled": "never",
-	"typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-	"typescript.inlayHints.variableTypes.enabled": true,
-	"typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
-	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[scss]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"[rust]": {
-		"editor.defaultFormatter": "rust-lang.rust-analyzer"
-	},
-	"[lua]": {
-		"editor.defaultFormatter": "sumneko.lua"
-	},
-	"mssql.connections": [
-		{
-			"server": "localhost,9989",
-			"database": "cashbook",
-			"authenticationType": "SqlLogin",
-			"user": "sa",
-			"password": "",
-			"emptyPasswordInput": false,
-			"savePassword": true,
-			"profileName": "accounting-cashbook",
-			"encrypt": "Mandatory",
-			"trustServerCertificate": true,
-			"connectTimeout": 15,
-			"commandTimeout": 30,
-			"applicationName": "vscode-mssql"
-		},
-		{
-			"server": "localhost,8989",
-			"database": "",
-			"authenticationType": "SqlLogin",
-			"user": "sa",
-			"password": "",
-			"emptyPasswordInput": false,
-			"savePassword": true,
-			"profileName": "cashbook",
-			"encrypt": "Mandatory",
-			"trustServerCertificate": true,
-			"connectTimeout": 15,
-			"commandTimeout": 30,
-			"applicationName": "vscode-mssql"
-		}
-	],
-	"workbench.colorTheme": "Atom One Dark",
-	"workbench.activityBar.location": "hidden"
+  // Base
+  "telemetry.telemetryLevel": "off",
+  "extensions.autoUpdate": true,
+  "keyboard.dispatch": "code",
+  "files.simpleDialog.enable": true,
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.banner": "never",
+
+  // Window
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "window.commandCenter": false,
+  "window.restoreWindows": "none",
+
+  // AI
+  "chat.commandCenter.enabled": false,
+  "chat.agent.enabled": false,
+
+  // Explorer
+  "explorer.autoReveal": false,
+  "explorer.confirmPasteNative": false,
+  "material-icon-theme.folders.theme": "classic",
+
+  // Git
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.blame.statusBarItem.enabled": true,
+  "git.defaultBranchName": "main",
+
+  // Terminal
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.linux": "fish",
+
+  // Problems
+  "problems.defaultViewMode": "tree",
+  "problems.showCurrentInStatus": false,
+  "problems.autoReveal": false,
+
+  // Workbench
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.reduceMotion": "on",
+  "workbench.list.openMode": "doubleClick",
+  "workbench.tree.expandMode": "doubleClick",
+  "workbench.view.alwaysShowHeaderActions": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.enablePreview": false,
+  "workbench.layoutControl.enabled": false,
+
+  // Editor
+  "editor.codeLens": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.stickyScroll.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.cursorSurroundingLines": 5,
+  "editor.fontFamily": "'FiraCode Nerd Font Ret', 'monospace', monospace",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 17,
+  "editor.indentSize": 2,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
+  "editor.wordWrap": "off",
+  "editor.renderLineHighlight": "none",
+  "editor.renderLineHighlightOnlyWhenFocus": true,
+  "editor.foldingHighlight": true,
+  "editor.unfoldOnClickAfterEndOfLine": false,
+  "editor.showFoldingControls": "never",
+  "editor.occurrencesHighlight": "singleFile",
+  "editor.scrollbar.horizontal": "auto",
+  "editor.scrollbar.vertical": "auto",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": false,
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.quickSuggestionsDelay": 100,
+  "editor.multiCursorModifier": "alt",
+
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // SCSS, CSS
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // TypeScript, JavaScript
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "eslint.enable": true,
+
+  // Dotnet
+  "[csharp]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+  },
+  "dotnet.autoInsert.enableAutoInsert": true,
+  "dotnet.codeLens.enableReferencesCodeLens": true,
+  "dotnet.codeLens.enableTestsCodeLens": true,
+  "dotnet.diagnostics.reportInformationAsHint": false,
+
+  // Rust
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+
+  // Lua
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+
+  // Extensions
+  "mssql.connections": [
+    {
+      "server": "localhost,9989",
+      "database": "cashbook",
+      "authenticationType": "SqlLogin",
+      "user": "sa",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true,
+      "profileName": "accounting-cashbook",
+      "encrypt": "Mandatory",
+      "trustServerCertificate": true,
+      "connectTimeout": 15,
+      "commandTimeout": 30,
+      "applicationName": "vscode-mssql",
+      "id": "01DF71B1-08FA-4B1C-BC51-C3E479C752C1",
+      "groupId": "94D07299-F9D6-448A-B06A-AE710AFABBBA"
+    },
+    {
+      "server": "localhost,8989",
+      "database": "",
+      "authenticationType": "SqlLogin",
+      "user": "sa",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true,
+      "profileName": "cashbook",
+      "encrypt": "Mandatory",
+      "trustServerCertificate": true,
+      "connectTimeout": 15,
+      "commandTimeout": 30,
+      "applicationName": "vscode-mssql",
+      "id": "AD4B4E9C-BE99-4766-BB15-64522B02C1A1",
+      "groupId": "94D07299-F9D6-448A-B06A-AE710AFABBBA"
+    }
+  ],
+
+  // Changed by user
+  "__DUMMY__": true,
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Atom One Dark"
 }
