@@ -4,3 +4,5 @@ email="edergunov@proton.me"
 
 [init]
 defaultBranch="main"
+[core]
+	autocrlf = input
