@@ -15,7 +15,9 @@
 
   // AI
   "chat.commandCenter.enabled": false,
-  "chat.agent.enabled": false,
+  "github.copilot.enable": {
+    "*": false
+  },
 
   // Explorer
   "explorer.autoReveal": false,
