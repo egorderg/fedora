@@ -133,10 +133,21 @@
     "editor.maxTokenizationLineLength": 2500,
     "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
+  "dotnetAcquisitionExtension.sharedExistingDotnetPath": "dotnet",
   "dotnet.autoInsert.enableAutoInsert": true,
   "dotnet.codeLens.enableReferencesCodeLens": true,
   "dotnet.codeLens.enableTestsCodeLens": true,
   "dotnet.diagnostics.reportInformationAsHint": false,
+
+  // Python
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultColorDecorators": "never",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.wordBasedSuggestions": "off"
+  },
+  "python.analysis.typeCheckingMode": "standard",
 
   // Rust
   "[rust]": {
@@ -150,5 +161,6 @@
 
   // Changed by user
   "__DUMMY__": true,
-  "workbench.colorTheme": "Atom One Dark"
+  "workbench.colorTheme": "Atom One Dark",
+  "security.promptForLocalFileProtocolHandling": false
 }
