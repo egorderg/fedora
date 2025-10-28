@@ -10,11 +10,7 @@
   // Window
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
-  "window.commandCenter": false,
   "window.restoreWindows": "none",
-
-  // AI
-  "chat.commandCenter.enabled": false,
   "github.copilot.enable": {
     "*": false
   },
@@ -33,6 +29,10 @@
   // Terminal
   "terminal.integrated.hideOnStartup": "always",
   "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.cursorStyleInactive": "none",
+  "terminal.integrated.cursorBlinking": true,
 
   // Problems
   "problems.defaultViewMode": "tree",
@@ -53,14 +53,17 @@
   "workbench.layoutControl.enabled": false,
 
   // Editor
+  "breadcrumbs.enabled": false,
   "editor.codeLens": true,
   "editor.inlayHints.enabled": "on",
   "editor.stickyScroll.enabled": false,
   "editor.cursorSmoothCaretAnimation": "off",
   "editor.cursorSurroundingLines": 5,
-  "editor.fontFamily": "'FiraCode Nerd Font Ret', 'monospace', monospace",
-  "editor.fontSize": 13,
-  "editor.lineHeight": 17,
+  "editor.fontFamily": "'Jetbrains Mono', 'monospace', monospace",
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 13.5,
+  "editor.lineHeight": 18,
+  "editor.letterSpacing": 0,
   "editor.indentSize": 2,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "none",
@@ -77,14 +80,20 @@
   "editor.scrollbar.vertical": "auto",
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
-  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.enabled": false,
   "editor.guides.bracketPairs": false,
   "editor.guides.bracketPairsHorizontal": false,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.semanticHighlighting.enabled": true,
+  "editor.parameterHints.enabled": true,
+  "editor.suggest.showInlineDetails": true,
+  "editor.suggest.showStatusBar": true,
+  "editor.suggest.preview": false,
+  "editor.suggestLineHeight": 22,
   "editor.quickSuggestionsDelay": 100,
   "editor.multiCursorModifier": "alt",
+  "errorLens.fontSize": "12",
 
   // JSON/XML
   "[json]": {
@@ -159,8 +168,9 @@
     "editor.defaultFormatter": "sumneko.lua"
   },
 
-  // Changed by user
+  // Changed by vscode
   "__DUMMY__": true,
-  "workbench.colorTheme": "Atom One Dark",
-  "security.promptForLocalFileProtocolHandling": false
+  "window.commandCenter": false,
+  "chat.commandCenter.enabled": false,
+  "workbench.colorTheme": "Islands Dark"
 }
