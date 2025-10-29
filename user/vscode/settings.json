@@ -11,6 +11,10 @@
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.restoreWindows": "none",
+
+  // Copilot
+  "inlineChat.lineNaturalLanguageHint": false,
+  "inlineChat.enableV2": true,
   "github.copilot.enable": {
     "*": false
   },
@@ -66,6 +70,7 @@
   "editor.letterSpacing": 0,
   "editor.indentSize": 2,
   "editor.tabSize": 2,
+  "editor.autoIndent": "full",
   "editor.renderWhitespace": "none",
   "editor.detectIndentation": false,
   "editor.insertSpaces": false,
@@ -140,6 +145,7 @@
   // Dotnet
   "[csharp]": {
     "editor.maxTokenizationLineLength": 2500,
+    "editor.formatOnType": false,
     "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "dotnetAcquisitionExtension.sharedExistingDotnetPath": "dotnet",
