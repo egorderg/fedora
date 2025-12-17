@@ -1,11 +1,9 @@
 ## Custom VM Settings
 
--Xmx4096m
--Dsun.java2d.opengl=True
--Dsun.java2d.renderer=sun.java2d.marlin.MarlinRenderingEngine
--Dawt.useSystemAAFontSettings=lcd
--Dawt.ignorepaint=true
--Dswing.bufferPerWindow=true
--Dsun.awt.noerasebackground=true
+-Xmx8192m
+-Dawt.toolkit.name=WLToolkit
+-Dsun.java2d.vulkan=True
+-Dsun.java2d.vulkan.deviceNumber=0
+-Dsun.java2d.vulkan.accelsd=true
 -XX:+UseStringDeduplication
 -XX:+UseParallelGC
