@@ -15,3 +15,5 @@ echo "  https://addons.mozilla.org/en-US/firefox/addon/istilldontcareaboutcookie
 echo "  https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/"
 
 echo "Set Bookmarks"
+
+echo "Manage Exceptions from Fingerprinting inside the Settings and not librewolf.overrides.cfg"
