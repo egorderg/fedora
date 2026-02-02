@@ -66,3 +66,79 @@ bind(
   "editor.action.sourceAction",
   "editorHasCodeActionsProvider && textInputFocus && !editorReadonly",
 );
+
+// Hover
+bind("f1", "editor.action.showHover", "editorTextFocus");
+
+// Rename
+bind("escape", "cancelRenameInput", "editorFocus && renameInputVisible");
+bind(
+  "f2",
+  "editor.action.rename",
+  "editorHasRenameProvider && editorTextFocus && !editorReadonly",
+);
+bind("down", "focusNextRenameSuggestion", "renameInputVisible");
+bind("up", "focusPreviousRenameSuggestion", "renameInputVisible");
+bind("tab", "focusNextRenameSuggestion", "renameInputVisible");
+bind("shift+tab", "focusPreviousRenameSuggestion", "renameInputVisible");
+bind(
+  "enter",
+  "acceptRenameInput",
+  "editorFocus && renameInputVisible && !isComposing",
+);
+// bind(
+//   "ctrl+enter",
+//   "acceptRenameInputWithPreview",
+//   "config.editor.rename.enablePreview && editorFocus && renameInputVisible && !isComposing",
+// );
+
+// Definition
+bind(
+  "escape",
+  "closeReferenceSearch",
+  "editorTextFocus && referenceSearchVisible && !config.editor.stablePeek || referenceSearchVisible && !config.editor.stablePeek && !inputFocus && !listMultiSelection && !treeFindOpen",
+);
+bind(
+  "escape",
+  "editor.closeCallHierarchy",
+  "callHierarchyVisible && !config.editor.stablePeek && !listMultiSelection && !treeFindOpen",
+);
+bind(
+  "escape",
+  "editor.closeTypeHierarchy",
+  "typeHierarchyVisible && !config.editor.stablePeek && !listMultiSelection && !treeFindOpen",
+);
+bind(
+  "f3",
+  "editor.action.revealDefinition",
+  "editorHasDefinitionProvider && editorTextFocus",
+);
+bind(
+  "f4",
+  "editor.action.goToTypeDefinition",
+  "editorHasDefinitionProvider && editorTextFocus",
+);
+bind(
+  "f5",
+  "editor.action.goToImplementation",
+  "editorHasImplementationProvider && editorTextFocus",
+);
+bind(
+  "f6",
+  "editor.action.goToReferences",
+  "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor",
+);
+bind(
+  "f7",
+  "editor.showCallHierarchy",
+  "editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor",
+);
+
+// Problems
+bind(
+  "escape",
+  "closeMarkersNavigation",
+  "editorFocus && markersNavigationVisible",
+);
+bind("f11", "editor.action.marker.prevInFiles", "editorFocus");
+bind("f12", "editor.action.marker.nextInFiles", "editorFocus");

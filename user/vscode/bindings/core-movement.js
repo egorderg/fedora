@@ -11,10 +11,14 @@ bind("home", "cursorHome", "textInputFocus");
 bind("shift+home", "cursorHomeSelect", "textInputFocus");
 bind("left", "cursorLeft", "textInputFocus");
 bind("shift+left", "cursorLeftSelect", "textInputFocus");
-bind("pagedown", "cursorPageDown", "textInputFocus");
-bind("shift+pagedown", "cursorPageDownSelect", "textInputFocus");
-bind("pageup", "cursorPageUp", "textInputFocus");
-bind("shift+pageup", "cursorPageUpSelect", "textInputFocus");
+bind("pagedown", "editorScroll", "textInputFocus", {
+  to: "down",
+  by: "halfPage",
+});
+bind("pageup", "editorScroll", "textInputFocus", {
+  to: "up",
+  by: "halfPage",
+});
 bind("right", "cursorRight", "textInputFocus");
 bind("shift+right", "cursorRightSelect", "textInputFocus");
 bind("ctrl+home", "cursorTop", "textInputFocus");
@@ -27,16 +31,6 @@ bind("ctrl+left", "cursorWordLeft", "textInputFocus");
 bind("ctrl+shift+left", "cursorWordLeftSelect", "textInputFocus");
 bind("ctrl+down", "scrollLineDown", "textInputFocus");
 bind("ctrl+up", "scrollLineUp", "textInputFocus");
-bind(
-  "alt+down",
-  "editor.action.moveLinesDownAction",
-  "editorTextFocus && !editorReadonly",
-);
-bind(
-  "alt+up",
-  "editor.action.moveLinesUpAction",
-  "editorTextFocus && !editorReadonly",
-);
 bind("backspace", "deleteLeft", "textInputFocus");
 bind("ctrl+backspace", "deleteWordLeft", "textInputFocus && !editorReadonly");
 bind(

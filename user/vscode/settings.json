@@ -8,7 +8,7 @@
   "security.workspace.trust.banner": "never",
 
   // Window
-  "window.menuBarVisibility": "toggle",
+  "window.menuBarVisibility": "compact",
   "window.restoreWindows": "none",
   "window.titleBarStyle": "custom",
   "window.dialogStyle": "custom",
@@ -38,8 +38,17 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.cursorStyleInactive": "none",
-  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorBlinking": false,
   "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.allowMnemonics": false,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.suggest.enabled": false,
+  "terminal.integrated.sendKeybindingsToShell": false,
+  "terminal.integrated.enableVisualBell": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.terminal.rename",
+  ],
 
   // Problems
   "problems.defaultViewMode": "tree",
@@ -51,6 +60,7 @@
   "search.useReplacePreview": true,
 
   // Workbench
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.editor.empty.hint": "hidden",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": true,
@@ -61,6 +71,7 @@
   "workbench.view.alwaysShowHeaderActions": false,
   "workbench.editor.showTabs": "single",
   "workbench.editor.enablePreview": false,
+  "workbench.editor.revealIfOpen": false,
   "workbench.layoutControl.enabled": false,
   "breadcrumbs.enabled": false,
   "editor.find.cursorMoveOnType": false,
@@ -185,5 +196,5 @@
   "window.commandCenter": false,
   "chat.commandCenter.enabled": false,
   "workbench.colorTheme": "Default Light Modern",
-  "workbench.activityBar.location": "hidden",
+  "terminal.integrated.initialHint": false,
 }

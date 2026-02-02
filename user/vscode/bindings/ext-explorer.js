@@ -36,14 +36,19 @@ bind(
   "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus",
 );
 bind(
-  "ctrl+f",
+  "ctrl+shift+f",
   "filesExplorer.findInFolder",
   "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus",
 );
 
 // Global
 bind_global(
-  "e",
+  "e e",
   "workbench.view.explorer",
   "viewContainer.workbench.view.explorer.enabled",
+);
+bind_global(
+  "e b",
+  "workbench.files.action.showActiveFileInExplorer",
+  "viewContainer.workbench.view.explorer.enabled && editorFocus",
 );

@@ -8,8 +8,13 @@ bind(
 );
 bind(
   "ctrl+enter",
-  "quickInput.acceptInBackground",
-  "cursorAtEndOfQuickInputBox && inQuickInput && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickPick'",
+  "quickInput.accept",
+  "inQuickInput && !isComposing && quickInputType != 'quickWidget'",
+);
+bind(
+  "alt+enter",
+  "quickInput.accept",
+  "inQuickInput && !isComposing && quickInputType != 'quickWidget'",
 );
 bind(
   "ctrl+home",

@@ -1,41 +1,21 @@
 const fs = require("node:fs");
 const keymap = require("./keymap");
 
-// TODO: improve local bindings -> use always alt for local bindings and never elsewheres
-
 // TODO
-// improve file names -> bundle names together like core-buffer.js or ft-diff.js
-// remove last system keybindings
-// there are many more quick pickers -> validate with shift shift and then type ? to see all -> put this also into alt-h
-// open project with new window
-// tab/buffer features -> right click on a tab
-// format/format with?
-// file management
-// lsp rename and other lsp stuff like hover and code actions -> validate with rigth click
-// scroll in autocomplete the docs -> checkout with window.title
-// close signature/hover when typing
-// git -> check with when if its active
-// terminal
-// picker opens item always in the first window
-// search/replace use new tab
+// markdown editor
+// create the same bindings of the find also for the search editor
 // ai chat use new tab and inline -> ctrl+i? and agent management with history ... -> check with quick pickers
-// follow link -> search editor open file from key
+// remove last system keybindings
+// iterate all open todos
 // git -> check with when if its active
 // git undo last commit
 // git open changes
 // git commit has a buffer!!!! Git Commit
 // git cherry-pick
 // snippets -> there is a snippets picker -> also snippet expand and there is a quick picker to select a snippet
-// maybe no quickfix like list -> tasks should feed problems
-// there is a show running tasks quick pick and terminate task -> ctrl+t?
-// change cases
-// create search and terminal always in the current window, use A-x 4 to create it to the right
-// alt+x h k to open the keyshortcuts fast
-// create the same bindings of the findWidth also for the search editor
+// there is a show running tasks quick pick and terminate task -> ctrl+t? or alt+x t
 
 // generate a readme for the keymap. use title for the title
-
-// shift + enter is break line
 
 // ctrl+ctrl to switch layouts
 // extensions should handle multi layouts that can be switched via a quick pick
@@ -46,29 +26,32 @@ const keymap = require("./keymap");
 // writeable search editor with apply changes
 // problems view as editor -> maybe put it inside layout -> Problems
 // also a buffer list with all open editors would be neat -> put it also inside a layout?
+// show also after the buffers a list with open windows also with the ability to close them -> remove w w binding in core-window.js
+// create a todo scan task which feeds the problems tab
 
 // shift shift has many recent opened files. It looks like its some kind of buffer that are sometimes saved
 // validate how shift shift shows only open buffer and then search files
 // maybe create a custom quick picker where buffers are grouped first like in "edt" and when typing search for files
 // check if you can add a keybinding to close buffers from this list
+// create a custom open recent quick pick where only folders are visible with a extra command to open it in a new window
 
 const bindingFiles = [
   "./bindings/core.js",
-  "./bindings/core-help.js",
-  "./bindings/edt-core.js",
-  "./bindings/edt-ext.js",
-  "./bindings/edt-multi-cursor.js",
-  "./bindings/edt-completion.js",
-  "./bindings/edt-lsp.js",
-  "./bindings/edt-ext.js",
-  "./bindings/edt-buffer.js",
-  "./bindings/open.js",
-  "./bindings/find.js",
-  "./bindings/window.js",
-  "./bindings/picker.js",
-  "./bindings/explorer.js",
-  "./bindings/git.js",
-  "./bindings/ai.js",
+  "./bindings/core-list.js",
+  "./bindings/core-picker.js",
+  "./bindings/core-movement.js",
+  "./bindings/core-editing.js",
+  "./bindings/core-multi-cursor.js",
+  "./bindings/core-lsp.js",
+  "./bindings/core-buffer.js",
+  "./bindings/core-window.js",
+  "./bindings/ext-explorer.js",
+  "./bindings/ext-open.js",
+  "./bindings/ext-find.js",
+  "./bindings/ext-terminal.js",
+  "./bindings/ext-git.js",
+  "./bindings/ext-ai.js",
+  "./bindings/ext-help.js",
 ];
 
 const globalRawBindings = fs.readFileSync("./bindings/_default.json");

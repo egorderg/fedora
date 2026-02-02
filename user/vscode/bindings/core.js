@@ -2,23 +2,32 @@ const { bind } = require("../keymap");
 
 bind("escape", "editor.cancelOperation", "cancellableOperation");
 
-bind("ctrl+shift+pageup", "workbench.action.navigateBack", "canNavigateBack");
+bind("ctrl+shift+pagedown", "workbench.action.navigateBack", "canNavigateBack");
 bind(
-  "ctrl+shift+pagedown",
+  "ctrl+shift+pageup",
   "workbench.action.navigateForward",
   "canNavigateForward",
 );
 bind(
-  "ctrl+tab",
+  "ctrl+pagedown",
   "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
   "!activeEditorGroupEmpty",
 );
 bind(
-  "ctrl+shift+tab",
+  "ctrl+pagedown",
+  "workbench.action.quickOpenNavigateNextInEditorPicker",
+  "inEditorsPicker && inQuickOpen",
+);
+bind(
+  "ctrl+pageup",
   "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
   "!activeEditorGroupEmpty",
+);
+bind(
+  "ctrl+pageup",
+  "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+  "inEditorsPicker && inQuickOpen",
 );
 
 bind("alt+space", "workbench.action.showCommands");
 bind("shift shift", "workbench.action.quickOpen");
-bind("ctrl ctrl", "workbench.action.quickTextSearch");
