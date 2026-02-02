@@ -1,0 +1,67 @@
+[
+  { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor" },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.reopenClosedEditor"
+  },
+  {
+    "key": "alt+x 0",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "alt+x 1",
+    "command": "workbench.action.closeEditorsInOtherGroups"
+  },
+  {
+    "key": "alt+x 2",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "alt+x 3",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "alt+x w a",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "alt+x w p",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "alt+2",
+    "command": "workbench.action.focusSecondEditorGroup"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.action.focusThirdEditorGroup"
+  },
+  {
+    "key": "alt+4",
+    "command": "workbench.action.focusFourthEditorGroup"
+  },
+  {
+    "key": "alt+5",
+    "command": "workbench.action.focusFifthEditorGroup"
+  },
+  {
+    "key": "alt+6",
+    "command": "workbench.action.focusSixthEditorGroup"
+  },
+  {
+    "key": "alt+7",
+    "command": "workbench.action.focusSeventhEditorGroup"
+  },
+  {
+    "key": "alt+8",
+    "command": "workbench.action.focusEighthEditorGroup"
+  },
+  {
+    "key": "alt+9",
+    "command": "workbench.action.focusNinthEditorGroup"
+  }
+]

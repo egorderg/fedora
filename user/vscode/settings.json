@@ -9,14 +9,16 @@
 
   // Window
   "window.menuBarVisibility": "toggle",
-  "window.titleBarStyle": "custom",
   "window.restoreWindows": "none",
+  "window.titleBarStyle": "custom",
+  "window.dialogStyle": "custom",
+  "window.customTitleBarVisibility": "never",
 
   // Copilot
   "inlineChat.lineNaturalLanguageHint": false,
   "inlineChat.enableV2": true,
   "github.copilot.enable": {
-    "*": false
+    "*": false,
   },
 
   // Explorer
@@ -37,11 +39,16 @@
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.cursorStyleInactive": "none",
   "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultLocation": "editor",
 
   // Problems
   "problems.defaultViewMode": "tree",
   "problems.showCurrentInStatus": false,
   "problems.autoReveal": false,
+
+  // Search
+  "search.mode": "newEditor",
+  "search.useReplacePreview": true,
 
   // Workbench
   "workbench.editor.empty.hint": "hidden",
@@ -52,12 +59,11 @@
   "workbench.list.openMode": "doubleClick",
   "workbench.tree.expandMode": "doubleClick",
   "workbench.view.alwaysShowHeaderActions": false,
-  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.showTabs": "single",
   "workbench.editor.enablePreview": false,
   "workbench.layoutControl.enabled": false,
-
-  // Editor
   "breadcrumbs.enabled": false,
+  "editor.find.cursorMoveOnType": false,
   "editor.codeLens": true,
   "editor.inlayHints.enabled": "on",
   "editor.stickyScroll.enabled": false,
@@ -102,35 +108,35 @@
 
   // JSON/XML
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[xml]": {
-    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
   },
 
   // SCSS, CSS
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
   // TypeScript, JavaScript
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
   "typescript.updateImportsOnFileMove.enabled": "never",
@@ -146,7 +152,7 @@
   "[csharp]": {
     "editor.maxTokenizationLineLength": 2500,
     "editor.formatOnType": false,
-    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
   },
   "dotnetAcquisitionExtension.sharedExistingDotnetPath": "dotnet",
   "dotnet.autoInsert.enableAutoInsert": true,
@@ -160,23 +166,24 @@
     "editor.defaultColorDecorators": "never",
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
-    "editor.wordBasedSuggestions": "off"
+    "editor.wordBasedSuggestions": "off",
   },
   "python.analysis.typeCheckingMode": "standard",
 
   // Rust
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
   },
 
   // Lua
   "[lua]": {
-    "editor.defaultFormatter": "sumneko.lua"
+    "editor.defaultFormatter": "sumneko.lua",
   },
 
   // Changed by vscode
   "__DUMMY__": true,
   "window.commandCenter": false,
   "chat.commandCenter.enabled": false,
-  "workbench.colorTheme": "Islands Dark"
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.activityBar.location": "hidden",
 }

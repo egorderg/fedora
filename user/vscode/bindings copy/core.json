@@ -1,0 +1,26 @@
+[
+  {
+    "key": "escape",
+    "command": "editor.cancelOperation",
+    "when": "cancellableOperation"
+  },
+  { "key": "alt+space", "command": "workbench.action.showCommands" },
+  {
+    "key": "shift shift",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl ctrl",
+    "command": "workbench.action.quickTextSearch"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  }
+]
