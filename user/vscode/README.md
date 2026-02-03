@@ -1,14 +1,57 @@
-# 🧭 VS Code Keybinding Cheat Sheet
+# VS Code Custom Keybindings
 
-## 🔲 Window & UI Management
+A comprehensive keyboard-driven setup for VS Code with vim-like leader key prefixes.
 
-| Shortcut       | Action                                                   |
-| -------------- | -------------------------------------------------------- |
-| `Ctrl+B`       | Toggle Panel                                             |
-| `Alt+B`        | Toggle Maximized Panel                                   |
-| `Ctrl+Shift+A` | Toggle Activity Bar                                      |
-| `Ctrl+Shift+E` | Focus Explorer                                           |
-| `Esc`          | Return focus to active editor group (from sidebar/panel) |
+## Prefix System
+
+This keymap uses a **two-tier prefix system**:
+
+- **Global**: `Alt+X` followed by key(s) — for workbench-wide actions
+- **Local**: `Alt+key` — for contextual actions
+- **Direct**: No prefix — for immediate actions
+
+---
+
+## Essentials
+
+| Shortcut | Action |
+|----------|--------|
+| `Shift Shift` | Quick Open (files) |
+| `Alt+Space` | Command Palette |
+| `Alt+X` | Global prefix (wait for next key) |
+
+---
+
+## Core Navigation
+
+### Editor Navigation
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+PageDown` | Next recently used editor |
+| `Ctrl+PageUp` | Previous least recently used editor |
+| `Ctrl+Shift+PageDown` | Navigate back |
+| `Ctrl+Shift+PageUp` | Navigate forward |
+
+### Editor Groups (Direct)
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+1` … `Ctrl+9` | Focus editor group 1–9 |
+| `Ctrl+=` | Toggle maximize editor group |
+| `Ctrl+\` | Split editor right |
+| `Alt+\` | Split editor down |
+
+### Editor Groups (Global: `Alt+X`)
+
+| Shortcut | Action |
+|----------|--------|
+| `0` | Close editors in group |
+| `1` | Close editors in other groups |
+| `2` | Split editor down |
+| `3` | Split editor right |
+
+---
 
 ## 🔎 Quick Open & Navigation
 

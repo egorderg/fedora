@@ -29,5 +29,5 @@ bind(
   "inEditorsPicker && inQuickOpen",
 );
 
-bind("alt+space", "workbench.action.showCommands");
+bind("f12", "workbench.action.showCommands");
 bind("shift shift", "workbench.action.quickOpen");

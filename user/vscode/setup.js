@@ -49,8 +49,8 @@ const bindingFiles = [
   "./bindings/ext-open.js",
   "./bindings/ext-find.js",
   "./bindings/ext-terminal.js",
+  "./bindings/ext-markdown.js",
   "./bindings/ext-git.js",
-  "./bindings/ext-ai.js",
   "./bindings/ext-help.js",
 ];
 

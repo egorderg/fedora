@@ -15,11 +15,9 @@
   "window.customTitleBarVisibility": "never",
 
   // Copilot
-  "inlineChat.lineNaturalLanguageHint": false,
-  "inlineChat.enableV2": true,
-  "github.copilot.enable": {
-    "*": false,
-  },
+  "chat.agent.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "inlineChat.enableV2": false,
 
   // Explorer
   "explorer.autoReveal": false,
@@ -194,7 +192,6 @@
   // Changed by vscode
   "__DUMMY__": true,
   "window.commandCenter": false,
-  "chat.commandCenter.enabled": false,
   "workbench.colorTheme": "Default Light Modern",
   "terminal.integrated.initialHint": false,
 }
