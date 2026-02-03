@@ -6232,7 +6232,7 @@
     "command": "git.pull"
   },
   {
-    "key": "alt+x g P",
+    "key": "alt+x g shift+p",
     "command": "git.push"
   },
   {

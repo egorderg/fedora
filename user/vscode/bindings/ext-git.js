@@ -55,7 +55,7 @@ bind_global("g shift+g", "git.viewStagedChanges");
 bind_global("g f", "git.fetch");
 bind_global("g c", "git.commitStaged");
 bind_global("g p", "git.pull");
-bind_global("g P", "git.push");
+bind_global("g shift+p", "git.push");
 
 // Worktree
 bind_global("g w c", "git.createWorktree");
