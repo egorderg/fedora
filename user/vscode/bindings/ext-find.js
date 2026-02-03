@@ -1,6 +1,6 @@
-const { bind_local, bind_global } = require("../keymap");
+const { bind, bind_local, bind_global } = require("../keymap");
 
-bind_local("escape", "search.action.focusQueryEditorWidget", "inSearchEditor");
+bind("escape", "search.action.focusQueryEditorWidget", "inSearchEditor");
 bind_local(
   "down",
   "search.action.focusNextSearchResult",

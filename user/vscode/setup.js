@@ -2,28 +2,15 @@ const fs = require("node:fs");
 const keymap = require("./keymap");
 
 // TODO
-// markdown editor
-// create the same bindings of the find also for the search editor
-// ai chat use new tab and inline -> ctrl+i? and agent management with history ... -> check with quick pickers
 // remove last system keybindings
-// iterate all open todos
-// git -> check with when if its active
-// git undo last commit
-// git open changes
-// git commit has a buffer!!!! Git Commit
-// git cherry-pick
-// snippets -> there is a snippets picker -> also snippet expand and there is a quick picker to select a snippet
+// tasks and feed problems
 // there is a show running tasks quick pick and terminate task -> ctrl+t? or alt+x t
 
 // generate a readme for the keymap. use title for the title
 
-// ctrl+ctrl to switch layouts
-// extensions should handle multi layouts that can be switched via a quick pick
 // maybe create actions like open search or terminal in desired layout
-// create multiple layouts like Terminals, Tasks, Search, Docs, Mains
 // run tasks in editor view?
 // create fast docs management and a dashboard with a docs file that should be loaded
-// writeable search editor with apply changes
 // problems view as editor -> maybe put it inside layout -> Problems
 // also a buffer list with all open editors would be neat -> put it also inside a layout?
 // show also after the buffers a list with open windows also with the ability to close them -> remove w w binding in core-window.js

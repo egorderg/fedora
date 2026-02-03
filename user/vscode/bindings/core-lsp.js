@@ -109,30 +109,30 @@ bind(
   "typeHierarchyVisible && !config.editor.stablePeek && !listMultiSelection && !treeFindOpen",
 );
 bind(
-  "f3",
+  "f5",
   "editor.action.revealDefinition",
   "editorHasDefinitionProvider && editorTextFocus",
 );
 bind(
-  "f4",
+  "f6",
   "editor.action.goToTypeDefinition",
   "editorHasDefinitionProvider && editorTextFocus",
 );
 bind(
-  "f5",
+  "f7",
   "editor.action.goToImplementation",
   "editorHasImplementationProvider && editorTextFocus",
 );
 bind(
-  "f6",
+  "f8",
   "editor.action.goToReferences",
   "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor",
 );
-bind(
-  "f7",
-  "editor.showCallHierarchy",
-  "editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor",
-);
+// bind(
+//   "f9",
+//   "editor.showCallHierarchy",
+//   "editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor",
+// );
 
 // Problems
 bind(
@@ -140,5 +140,5 @@ bind(
   "closeMarkersNavigation",
   "editorFocus && markersNavigationVisible",
 );
-bind("f11", "editor.action.marker.prevInFiles", "editorFocus");
-bind("f12", "editor.action.marker.nextInFiles", "editorFocus");
+bind("f3", "editor.action.marker.prevInFiles", "editorFocus");
+bind("f4", "editor.action.marker.nextInFiles", "editorFocus");
