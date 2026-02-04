@@ -6248,6 +6248,22 @@
     "command": "git.migrateWorktreeChanges"
   },
   {
+    "key": "alt+x r r",
+    "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "alt+x r shift+r",
+    "command": "workbench.action.tasks.reRunTask"
+  },
+  {
+    "key": "alt+x r s",
+    "command": "workbench.action.tasks.showTasks"
+  },
+  {
+    "key": "alt+x r d",
+    "command": "workbench.action.tasks.terminate"
+  },
+  {
     "key": "alt+x h k",
     "command": "workbench.action.openGlobalKeybindings"
   },

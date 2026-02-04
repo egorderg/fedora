@@ -194,4 +194,5 @@
   "window.commandCenter": false,
   "workbench.colorTheme": "Default Light Modern",
   "terminal.integrated.initialHint": false,
+  "workbench.activityBar.location": "hidden",
 }
