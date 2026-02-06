@@ -24,5 +24,4 @@ bind_global("3", "workbench.action.splitEditor");
 bind_global("w a", "workbench.action.toggleActivityBarVisibility");
 bind_global("w p", "workbench.action.togglePanel");
 bind_global("w s", "workbench.action.toggleSidebarVisibility");
-bind_global("w w", "workbench.action.switchWindow");
 bind_global("w n", "workbench.action.newWindow");

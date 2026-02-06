@@ -1,14 +1,6 @@
 const fs = require("node:fs");
 const keymap = require("./keymap");
 
-// Problem view as a editor
-
-// Better buffer quick pick
-// show also after the buffers a list with open windows also with the ability to close them -> remove w w binding in core-window.js
-
-// create a todo scan task which feeds the problems tab
-// create fast docs management and a dashboard with a docs file that should be loaded
-
 const bindingFiles = [
   "./bindings/core.js",
   "./bindings/core-list.js",
@@ -25,7 +17,6 @@ const bindingFiles = [
   "./bindings/ext-terminal.js",
   "./bindings/ext-markdown.js",
   "./bindings/ext-git.js",
-  "./bindings/ext-tasks.js",
   "./bindings/ext-help.js",
 ];
 
