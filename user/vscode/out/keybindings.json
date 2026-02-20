@@ -5862,6 +5862,11 @@
     "command": "workbench.action.closeActiveEditor"
   },
   {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeGroup",
+    "when": "activeEditorGroupEmpty && multipleEditorGroups"
+  },
+  {
     "key": "ctrl+shift+w",
     "command": "workbench.action.reopenClosedEditor"
   },

@@ -5,3 +5,4 @@ if status is-interactive
 	alias ll 'ls -lA --color=auto --group-directories-first';
 	alias ls 'ls --color=auto';
 end
+mise activate fish | source

@@ -1,6 +1,11 @@
 const { bind, bind_global } = require("../keymap");
 
 bind("ctrl+w", "workbench.action.closeActiveEditor");
+bind(
+  "ctrl+w",
+  "workbench.action.closeGroup",
+  "activeEditorGroupEmpty && multipleEditorGroups",
+);
 bind("ctrl+shift+w", "workbench.action.reopenClosedEditor");
 bind("ctrl+1", "workbench.action.focusFirstEditorGroup");
 bind("ctrl+2", "workbench.action.focusSecondEditorGroup");
