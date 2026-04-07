@@ -1,0 +1,142 @@
+[
+  {
+    "bindings": {
+      "escape": "menu::Cancel",
+      "enter": "menu::Confirm",
+      "ctrl-enter": "menu::SecondaryConfirm",
+      "alt-enter": [
+        "picker::ConfirmInput",
+        {
+          "secondary": false
+        }
+      ],
+      "up": "menu::SelectPrevious",
+      "down": "menu::SelectNext",
+      "ctrl-=": [
+        "zed::IncreaseBufferFontSize",
+        {
+          "persist": false
+        }
+      ],
+      "ctrl-+": [
+        "zed::IncreaseBufferFontSize",
+        {
+          "persist": false
+        }
+      ],
+      "ctrl--": [
+        "zed::DecreaseBufferFontSize",
+        {
+          "persist": false
+        }
+      ],
+      "shift-escape": "workspace::ToggleZoom"
+    }
+  },
+  {
+    "context": "Picker || menu",
+    "bindings": {
+      "up": "menu::SelectPrevious",
+      "down": "menu::SelectNext"
+    }
+  },
+  {
+    "context": "menu",
+    "bindings": {
+      "left": "menu::SelectParent",
+      "right": "menu::SelectChild"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "f1": "command_palette::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "escape": "editor::Cancel",
+      "up": "editor::MoveUp",
+      "down": "editor::MoveDown",
+      "left": "editor::MoveLeft",
+      "right": "editor::MoveRight",
+      "delete": "editor::Delete",
+      "backspace": "editor::Backspace",
+      "ctrl-backspace": "editor::DeleteToPreviousWordStart",
+      "tab": "editor::Tab",
+      "shift-tab": "editor::Backtab",
+      "ctrl-left": "editor::MoveToPreviousWordStart",
+      "ctrl-right": "editor::MoveToNextWordEnd",
+      "shift-up": "editor::SelectUp",
+      "shift-down": "editor::SelectDown",
+      "shift-left": "editor::SelectLeft",
+      "shift-right": "editor::SelectRight",
+      "ctrl-shift-left": "editor::SelectToPreviousWordStart",
+      "ctrl-shift-right": "editor::SelectToNextWordEnd",
+      "alt-left": [
+        "editor::MoveToBeginningOfLine",
+        {
+          "stop_at_soft_wraps": true,
+          "stop_at_indent": true
+        }
+      ],
+      "alt-shift-left": [
+        "editor::SelectToBeginningOfLine",
+        {
+          "stop_at_soft_wraps": true,
+          "stop_at_indent": true
+        }
+      ],
+      "alt-right": [
+        "editor::MoveToEndOfLine",
+        {
+          "stop_at_soft_wraps": true
+        }
+      ],
+      "alt-shift-right": [
+        "editor::SelectToEndOfLine",
+        {
+          "stop_at_soft_wraps": true
+        }
+      ],
+      "alt-up": "editor::MoveToBeginning",
+      "alt-shift-up": "editor::SelectToBeginning",
+      "alt-down": "editor::MoveToEnd",
+      "alt-shift-down": "editor::SelectToEnd",
+      "ctrl-z": "editor::Undo",
+      "ctrl-shift-z": "editor::Redo",
+      "ctrl-a": "editor::SelectAll",
+      "ctrl-x": "editor::Cut",
+      "ctrl-c": "editor::Copy",
+      "ctrl-v": "editor::Paste",
+      "ctrl-b": "editor::HalfPageDown",
+      "ctrl-shift-b": "editor::HalfPageUp",
+      "ctrl-l": "editor::ScrollCursorCenter",
+      "ctrl-shift-l": "editor::ScrollCursorTop",
+      "ctrl-g": "go_to_line::Toggle"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "enter": "editor::Newline",
+      "shift+enter": "editor::NewlineBelow",
+      "ctrl+shift+enter": "editor::NewlineAbove",
+      "ctrl+f": "buffer_search::Deploy",
+      "ctrl+shift+f": "buffer_search::DeployReplace"
+    }
+  },
+  {
+    "context": "Editor && mode == auto_height",
+    "bindings": {
+      "shift-enter": "editor::NewlineBelow"
+    }
+  },
+  {
+    "context": "Markdown",
+    "bindings": {
+      "ctrl-c": "markdown::Copy"
+    }
+  }
+]

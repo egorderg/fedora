@@ -1,0 +1,107 @@
+{
+  "base_keymap": "None",
+  "gutter": {
+    "min_line_number_digits": 3,
+    "folds": false,
+  },
+  "agent_servers": {
+    "opencode": {
+      "type": "registry",
+    },
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "title_bar": {
+    "show_sign_in": false,
+    "show_branch_icon": false,
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": true,
+    "show_tab_bar_buttons": false,
+  },
+  "terminal": {
+    "button": false,
+  },
+  "icon_theme": {
+    "mode": "light",
+    "light": "JetBrains New UI Icons (Light)",
+    "dark": "Zed (Default)",
+  },
+  "preview_tabs": {
+    "enabled": false,
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_line_height": "standard",
+  "show_signature_help_after_edits": true,
+  "show_edit_predictions": false,
+  "inline_code_actions": false,
+  "buffer_font_features": {
+    "calt": false,
+  },
+  "file_finder": {
+    "modal_max_width": "small",
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+  },
+  "search": {
+    "button": false,
+  },
+  "which_key": {
+    "enabled": true,
+    "delay_ms": 1000,
+  },
+  "edit_predictions": {
+    "provider": "none",
+  },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "diagnostics": {
+    "button": false,
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "notification_panel": {
+    "button": false,
+  },
+  "debugger": {
+    "button": false,
+  },
+  "agent": {
+    "button": false,
+    "dock": "right",
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "git_panel": {
+    "tree_view": true,
+    "file_icons": true,
+    "folder_icons": true,
+    "status_style": "icon",
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "theme": {
+    "mode": "system",
+    "light": "JetBrains Light",
+    "dark": "One Dark",
+  },
+}
