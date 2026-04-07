@@ -45,7 +45,7 @@
   "terminal.integrated.sendKeybindingsToShell": false,
   "terminal.integrated.enableVisualBell": false,
   "terminal.integrated.commandsToSkipShell": [
-    "workbench.action.terminal.rename",
+    "workbench.action.terminal.rename"
   ],
 
   // Problems
@@ -117,35 +117,35 @@
 
   // JSON/XML
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[xml]": {
-    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
 
   // SCSS, CSS
   "[css]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[scss]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "biomejs.biome"
   },
 
   // TypeScript, JavaScript
   "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
   "typescript.updateImportsOnFileMove.enabled": "never",
@@ -161,7 +161,7 @@
   "[csharp]": {
     "editor.maxTokenizationLineLength": 2500,
     "editor.formatOnType": false,
-    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "dotnetAcquisitionExtension.sharedExistingDotnetPath": "dotnet",
   "dotnet.autoInsert.enableAutoInsert": true,
@@ -175,24 +175,24 @@
     "editor.defaultColorDecorators": "never",
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
-    "editor.wordBasedSuggestions": "off",
+    "editor.wordBasedSuggestions": "off"
   },
   "python.analysis.typeCheckingMode": "standard",
 
   // Rust
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
 
   // Lua
   "[lua]": {
-    "editor.defaultFormatter": "sumneko.lua",
+    "editor.defaultFormatter": "sumneko.lua"
   },
 
   // Changed by vscode
   "__DUMMY__": true,
   "window.commandCenter": false,
-  "workbench.colorTheme": "Default Light Modern",
+  "workbench.colorTheme": "Light Modern",
   "terminal.integrated.initialHint": false,
   "json.schemaDownload.trustedDomains": {
     "https://schemastore.azurewebsites.net/": true,
@@ -203,5 +203,6 @@
     "https://json-schema.org/": true,
     "https://developer.microsoft.com/json-schemas/": true,
     "https://biomejs.dev": true,
-  },
+    "https://opencode.ai": true
+  }
 }
